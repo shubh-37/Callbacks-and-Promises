@@ -40,11 +40,11 @@ var th3 = getFile("file3");
 th1(getOutput);
 function getOutput(text1){
 	output(text1);
-	function th2(text2){
+	th2(function(text2){
 		output(text2);
-		function th3(text3){
+		 th3(function (text3){
 			output(text3);
 			output("completed!");
-		}
-	}
+		})
+	})
 }
