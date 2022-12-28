@@ -35,11 +35,14 @@ var p3 = getFile("file3");
 p1
 .then(function outputText(text1){
 	output(text1);
+}).then(function(){
 	return p2;
 }).then(function outputText(text2){
 	output(text2);
+}).then(function(){
 	return p3;
 }).then(function outputText(text3){
 	output(text3);
+}).then(function(){
 	output("Completed!")
 });
